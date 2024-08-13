@@ -1,57 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Encriptador de texto</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="shortcut icon" href="img/faviciocon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="encriptar">
-            <textarea 
-            name="texto" 
-            id="texto" 
-            cols="30" 
-            class="texto" 
-            rows="10" 
-            placeholder="Ingrese el texto aqui"
+            <textarea
+                name="texto"
+                class="texto"
+                id="texto"
+                cols="30"
+                rows="10"
+                placeholder="Ingresa el texto aquí"
             ></textarea>
-        <div class="terminos">
-            <p>Solo letras minusculas y sin acento.</p>
+            <div class="terminos">
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">
+                    Encriptar
+                </button>
+                <input
+                    type="button"
+                    class="btn-desencriptar"
+                    value="Desencriptar"
+                    onclick="desencriptar()"
+                />
+                <input
+                    type="button"
+                    class="btn-copiar"
+                    value="Copiar"
+                    onclick="copiarTexto()"
+                />
+            </div>
         </div>
-        <div class="botones">
-            <button
-            name="texto"
-            class="btn-encriptar" 
-            type="button" 
-            onclick="Encriptar()">
-            Encriptar
-        </button>
-            <button 
-            class="btn-desencriptar" 
-            type="button" 
-            onclick="desencriptar()">
-            Desencriptar
-            </button>
+        <div class="encriptado">
+            <img src="img/iamdoge.jpg" alt="" id="muñeco" />
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo">
+                    Ingresa el texto que deseas encriptar o desencriptar
+                </p>
+            </div>
         </div>
     </div>
-    <div class="encriptado">
-        <img src="" alt="" id="boy">
-        <div class="mensaje-encriptado" id="mensaje-encriptado">
-            <h2 id="titulo-mensaje">Ningun mensaje encontrado</h2>
-            <p id="parrafo">Ingresa el texto que vas a encriptar o desencriptar</p>
-            <textarea 
-            name="mensaje" 
-            id="mensaje" 
-            cols="30" 
-            rows="10" 
-            class="mensaje" 
-            ></textarea>
-        </div>
-    </div>
-</div>
 </body>
-<script src="script.js"></script>
+<script src="index.js"></script>
 </html>
